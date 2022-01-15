@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		5B4D882E27922D90005B09CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D882C27922D90005B09CF /* Main.storyboard */; };
 		5B4D883027922D96005B09CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D882F27922D96005B09CF /* Assets.xcassets */; };
 		5B4D883327922D96005B09CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D883127922D96005B09CF /* LaunchScreen.storyboard */; };
+		5B4D883B27923CEC005B09CF /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D883A27923CEC005B09CF /* MyAPIClient.swift */; };
+		C0E6F244C7C4B302A6967A64 /* Pods_StripePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CA8DE7825A585ADA29D195 /* Pods_StripePractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24CA8DE7825A585ADA29D195 /* Pods_StripePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StripePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4D882327922D90005B09CF /* StripePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4D882627922D90005B09CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B4D882827922D90005B09CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5B4D882F27922D96005B09CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B4D883227922D96005B09CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B4D883427922D96005B09CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B4D883A27923CEC005B09CF /* MyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		DA70542344DA71311BD1EAC1 /* Pods-StripePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePractice.debug.xcconfig"; path = "Target Support Files/Pods-StripePractice/Pods-StripePractice.debug.xcconfig"; sourceTree = "<group>"; };
+		F7CDAD5643EB5D8C442DFA10 /* Pods-StripePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StripePractice.release.xcconfig"; path = "Target Support Files/Pods-StripePractice/Pods-StripePractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E6F244C7C4B302A6967A64 /* Pods_StripePractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5B4D882527922D90005B09CF /* StripePractice */,
 				5B4D882427922D90005B09CF /* Products */,
+				66250D73EFCCD6F6CAA86519 /* Pods */,
+				5FF895E4A2BD98DABDD39D7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				5B4D882627922D90005B09CF /* AppDelegate.swift */,
 				5B4D882827922D90005B09CF /* SceneDelegate.swift */,
 				5B4D882A27922D90005B09CF /* ViewController.swift */,
+				5B4D883A27923CEC005B09CF /* MyAPIClient.swift */,
 				5B4D882C27922D90005B09CF /* Main.storyboard */,
 				5B4D882F27922D96005B09CF /* Assets.xcassets */,
 				5B4D883127922D96005B09CF /* LaunchScreen.storyboard */,
 				5B4D883427922D96005B09CF /* Info.plist */,
 			);
 			path = StripePractice;
+			sourceTree = "<group>";
+		};
+		5FF895E4A2BD98DABDD39D7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24CA8DE7825A585ADA29D195 /* Pods_StripePractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66250D73EFCCD6F6CAA86519 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA70542344DA71311BD1EAC1 /* Pods-StripePractice.debug.xcconfig */,
+				F7CDAD5643EB5D8C442DFA10 /* Pods-StripePractice.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4D883727922D96005B09CF /* Build configuration list for PBXNativeTarget "StripePractice" */;
 			buildPhases = (
+				59F095761DD38A1E6095C5DE /* [CP] Check Pods Manifest.lock */,
 				5B4D881F27922D90005B09CF /* Sources */,
 				5B4D882027922D90005B09CF /* Frameworks */,
 				5B4D882127922D90005B09CF /* Resources */,
+				EB1A6DF6319A8C5362A75BCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59F095761DD38A1E6095C5DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StripePractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1A6DF6319A8C5362A75BCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StripePractice/Pods-StripePractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StripePractice/Pods-StripePractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StripePractice/Pods-StripePractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B4D881F27922D90005B09CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				5B4D882B27922D90005B09CF /* ViewController.swift in Sources */,
 				5B4D882727922D90005B09CF /* AppDelegate.swift in Sources */,
 				5B4D882927922D90005B09CF /* SceneDelegate.swift in Sources */,
+				5B4D883B27923CEC005B09CF /* MyAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +355,7 @@
 		};
 		5B4D883827922D96005B09CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA70542344DA71311BD1EAC1 /* Pods-StripePractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		5B4D883927922D96005B09CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CDAD5643EB5D8C442DFA10 /* Pods-StripePractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
